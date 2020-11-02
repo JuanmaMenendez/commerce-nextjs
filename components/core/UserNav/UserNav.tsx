@@ -28,18 +28,25 @@ const UserNav: FC<Props> = ({ className, children, ...props }) => {
     <nav className={cn(s.root, className)}>
       <div className={s.mainContainer}>
         <ul className={s.list}>
+
+
           <li className={s.item} onClick={toggleSidebar}>
             <Bag />
             {itemsCount > 0 && <span className={s.bagCount}>{itemsCount}</span>}
           </li>
-          <li className={s.item}>
+
+          {/* Wishlist icon */}
+ {/*         <li className={s.item}>
             <Link href="/wishlist">
               <a onClick={closeSidebarIfPresent}>
                 <Heart />
               </a>
             </Link>
-          </li>
-          <li className={s.item}>
+          </li>*/}
+
+
+          {/* User icon */}
+          {/*<li className={s.item}>
             {customer ? (
               <Menu>
                 {({ open }) => (
@@ -60,7 +67,8 @@ const UserNav: FC<Props> = ({ className, children, ...props }) => {
                 <Avatar />
               </button>
             )}
-          </li>
+          </li>*/}
+
         </ul>
       </div>
     </nav>
