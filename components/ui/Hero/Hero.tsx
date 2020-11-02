@@ -18,15 +18,13 @@ const Hero: FC<Props> = ({ headline, description }) => {
             {headline}
           </h2>
           <div className="flex flex-col justify-between">
-            <p className="mt-5 text-xl leading-7 text-accent-2 text-white">
+            <p className="mt-5 text-lg leading-7 text-accent-2 text-white">
               {description}
             </p>
-            <Link href="/blog">
-              <a className="text-white pt-3 font-bold hover:underline flex flex-row cursor-pointer w-max-content">
-                Read it here
-                <RightArrow width="20" heigh="20" className="ml-1" />
-              </a>
-            </Link>
+              <p className="text-white text-2xl pt-3 font-bold flex flex-row">
+                Start a cart anytime, anywhere. Get all your groceries, meals, household essentials and meds in one go
+                {/*<RightArrow width="20" heigh="20" className="ml-1" />*/}
+              </p>
           </div>
         </div>
       </Container>

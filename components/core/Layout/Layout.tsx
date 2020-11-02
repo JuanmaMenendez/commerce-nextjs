@@ -55,6 +55,7 @@ const Layout: FC<Props> = ({ children, pageProps }) => {
   return (
     <CommerceProvider locale={locale}>
       <div className={cn(s.root)}>
+
         <header
           className={cn(
             'sticky top-0 bg-primary z-40 transition-all duration-150',
@@ -65,8 +66,11 @@ const Layout: FC<Props> = ({ children, pageProps }) => {
             <Navbar />
           </Container>
         </header>
-        <main className="fit">{children}</main>
+
+        <main className="flex-1">{children}</main>
+
         <Footer pages={pageProps.pages} />
+
         <Sidebar open={displaySidebar} onClose={closeSidebar}>
           <CartSidebarView />
         </Sidebar>

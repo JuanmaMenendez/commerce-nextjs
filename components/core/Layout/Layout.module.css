@@ -1,4 +1,7 @@
 .root {
-  @apply h-full bg-primary mx-auto transition-colors duration-150;
+  @apply bg-primary mx-auto transition-colors duration-150;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   max-width: 2460px;
 }
