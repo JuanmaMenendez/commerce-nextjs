@@ -2,7 +2,7 @@
   @apply relative max-h-full w-full box-border overflow-hidden bg-no-repeat bg-center bg-cover transition ease-linear cursor-pointer;
   height: 100% !important;
 
-  &:hover {
+ /* &:hover {
     & .squareBg:before {
       transform: scale(0.98);
     }
@@ -40,7 +40,7 @@
     &:nth-child(6n + 6) .wishlistButton {
       @apply bg-cyan text-white;
     }
-  }
+  }*/
 
   & .product-image {
     @apply transform transition-transform duration-500;
