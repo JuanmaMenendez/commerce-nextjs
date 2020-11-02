@@ -76,7 +76,7 @@ export default function Home({
 
   return (
     <div>
-      <Grid>
+   {/*   <Grid>
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
             key={node.path}
@@ -98,7 +98,7 @@ export default function Home({
             imgHeight={320}
           />
         ))}
-      </Marquee>
+      </Marquee>*/}
       <Hero
         headline="Release Details: The Yeezy BOOST 350 V2 ‘Natural'"
         description="
@@ -109,7 +109,7 @@ export default function Home({
         Hebrew. It’s now undergone a name change, and will be referred to as
         ‘Natural’."
       />
-      <Grid layout="B">
+    {/*  <Grid layout="B">
         {featured.slice(3, 6).map(({ node }, i) => (
           <ProductCard
             key={node.path}
@@ -135,7 +135,7 @@ export default function Home({
         categories={categories}
         brands={brands}
         newestProducts={newestProducts}
-      />
+      />*/}
     </div>
   )
 }

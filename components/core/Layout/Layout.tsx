@@ -76,7 +76,9 @@ const Layout: FC<Props> = ({ children, pageProps }) => {
           {modalView === 'SIGNUP_VIEW' && <SignUpView />}
           {modalView === 'FORGOT_VIEW' && <ForgotPassword />}
         </Modal>
-        <Featurebar
+
+        {/* !Cookies  */}
+        {/*<Featurebar
           title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
           hide={acceptedCookies}
           action={
@@ -84,7 +86,9 @@ const Layout: FC<Props> = ({ children, pageProps }) => {
               Accept cookies
             </Button>
           }
-        />
+        />*/}
+
+
         {/* <Toast open={displayToast} onClose={closeModal}>
           {toastText}
         </Toast> */}

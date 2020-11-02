@@ -23,8 +23,12 @@ const Footer: FC<Props> = ({ className, pages }) => {
 
   return (
     <footer className={rootClassName}>
+
+
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accents-2 py-12 text-primary bg-primary transition-colors duration-150">
+
+        {/* Footer Links */}
+        {/*<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accents-2 py-12 text-primary bg-primary transition-colors duration-150">
           <div className="col-span-1 lg:col-span-2">
             <Link href="/">
               <a className="flex flex-initial items-center font-bold md:mr-24">
@@ -90,17 +94,20 @@ const Footer: FC<Props> = ({ className, pages }) => {
               <I18nWidget />
             </div>
           </div>
-        </div>
-        <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
+        </div>*/}
+
+
+        {/* Footer Bottom bar */}
+        <div className="py-6 flex flex-col md:flex-row justify-between items-center">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span className="text-sm">&copy;2020 REEF TECHNOLOGY INC. ALL RIGHTS RESERVED.</span>
           </div>
+
           <div className="flex items-center">
-            <span className="text-primary">Crafted by</span>
-            <a href="https://vercel.com" aria-label="Vercel.com Link">
+            <a href="https://reeftechnology.com/" aria-label="Reef Technology Link">
               <img
-                src="/vercel.svg"
-                alt="Vercel.com Logo"
+                src="/reef-logo-text.svg"
+                alt="Reef logo"
                 className="inline-block h-6 ml-4 text-primary"
               />
             </a>
